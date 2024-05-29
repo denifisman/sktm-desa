@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Keterangan Tidak Mampu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulir Surat Keterangan Tidak Mampu</h1>
+    <form id="form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required><br>
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" required><br>
+        <label for="tglLahir">Tanggal Lahir:</label>
+        <input type="date" id="tglLahir" required><br>
+        <label for="keterangan">Keterangan:</label>
+        <textarea id="keterangan" required></textarea><br>
+        <button type="button" onclick="generateSurat()">Cetak Surat</button>
+    </form>
+
+    <div id="surat" style="display:none;">
+        <h1>Surat Keterangan Tidak Mampu</h1>
+        <p>Yang bertanda tangan di bawah ini:</p>
+        <p>Nama: <span id="namaSurat"></span></p>
+        <p>Alamat: <span id="alamatSurat"></span></p>
+        <p>Tanggal Lahir: <span id="tglLahirSurat"></span></p>
+        <p>Keterangan: <span id="keteranganSurat"></span></p>
+        <p>Dengan ini menyatakan bahwa yang bersangkutan adalah benar-benar warga yang tidak mampu.</p>
+        <button onclick="printSurat()">Cetak</button>
+        <button onclick="generatePDF()">Cetak ke PDF</button>
+    </div>
+
+    <!-- Menyertakan jsPDF secara lokal -->
+    <script src="jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+                                                 </html>
