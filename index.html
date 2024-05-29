@@ -21,13 +21,29 @@
     </form>
 
     <div id="surat" style="display:none;">
-        <h1>Surat Keterangan Tidak Mampu</h1>
+        <div class="kop-surat">
+            <img src="logo.png" alt="Logo Desa" class="logo">
+            <div class="kop-text">
+                <h2>PEMERINTAH DESA [NAMA DESA]</h2>
+                <h3>KECAMATAN [NAMA KECAMATAN]</h3>
+                <h3>KABUPATEN [NAMA KABUPATEN]</h3>
+                <p>Alamat: [ALAMAT DESA]</p>
+            </div>
+        </div>
+        <hr>
+        <h2 class="title">SURAT KETERANGAN TIDAK MAMPU</h2>
+        <p>Nomor: [NOMOR SURAT]</p>
         <p>Yang bertanda tangan di bawah ini:</p>
         <p>Nama: <span id="namaSurat"></span></p>
         <p>Alamat: <span id="alamatSurat"></span></p>
         <p>Tanggal Lahir: <span id="tglLahirSurat"></span></p>
         <p>Keterangan: <span id="keteranganSurat"></span></p>
         <p>Dengan ini menyatakan bahwa yang bersangkutan adalah benar-benar warga yang tidak mampu.</p>
+        <br><br>
+        <p>[NAMA DESA], [TANGGAL SURAT]</p>
+        <p>Kepala Desa [NAMA DESA]</p>
+        <br><br><br><br>
+        <p>[NAMA KEPALA DESA]</p>
         <button onclick="printSurat()">Cetak</button>
         <button onclick="generatePDF()">Cetak ke PDF</button>
     </div>
@@ -36,4 +52,4 @@
     <script src="jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
-                                                 </html>
+</html>
