@@ -49,3 +49,34 @@ button:hover {
     border: 1px solid #000;
     border-radius: 5px;
 }
+
+.kop-surat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.kop-surat .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.kop-surat .kop-text {
+    text-align: center;
+}
+
+.kop-surat .kop-text h2, .kop-surat .kop-text h3, .kop-surat .kop-text p {
+    margin: 0;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+    }
